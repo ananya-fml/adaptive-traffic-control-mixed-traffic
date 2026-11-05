@@ -1,0 +1,7 @@
+case,outcome,ew_green_s_median,ns_green_s_median,cycles_served,cycle_s_median,first_green_s,last_green_end_s,script_end_s,seconds_beyond_simperiod_4500,qlen_attribute_read
+constant 12 m on every counter (QLen above 6 m tail threshold),completed,80.0,80.0,23.0,166.0,600.1,4415.1,4799.1,299.1,"QLen(20,1)"
+constant 3 m on every counter (below tail threshold),completed,74.0,74.0,23.0,154.0,600.1,4139.1,4523.1,23.1,"QLen(20,1)"
+"NS 10 m / EW 2 m per counter, constant (below/above threshold mix)",completed,67.0,80.0,23.0,153.0,600.1,4116.1,4500.1,0.1,"QLen(20,1)"
+"NS 4 m / EW 1 m per counter, constant (both below threshold)",completed,68.0,80.0,23.0,154.0,600.1,4139.1,4523.1,23.1,"QLen(20,1)"
+zero on every counter (e.g. no queue result available as 0),completed,10.0,10.0,23.0,26.0,600.1,1195.1,1579.1,0.0,"QLen(20,1)"
+None on every counter (attribute has no value yet),TypeError: unsupported operand type(s) for +: 'int' and 'NoneType',,,,,,,,,

@@ -1,0 +1,40 @@
+{
+  "network_inpx": "C:/CHANGE_ME/Lanka_Original_Calibrated NC.inpx",
+  "layout_layx": "",
+  "output_dir": "results",
+  "scenarios": [
+    {"name": "base", "network_inpx": "C:/CHANGE_ME/Lanka_Original_Calibrated NC.inpx"}
+  ],
+  "signal_controller_id": 1,
+  "stages": [
+    {"name": "NS", "signal_groups": [2], "upstream_links": [101, 103]},
+    {"name": "EW", "signal_groups": [1], "upstream_links": [102, 104]}
+  ],
+  "movements": [
+    {"stage": "NS", "upstream_link": 101, "downstream_link": 202, "turn_fraction": 1.0, "saturation_veh_per_sec": 0.5},
+    {"stage": "NS", "upstream_link": 103, "downstream_link": 204, "turn_fraction": 1.0, "saturation_veh_per_sec": 0.5},
+    {"stage": "EW", "upstream_link": 102, "downstream_link": 201, "turn_fraction": 1.0, "saturation_veh_per_sec": 0.5},
+    {"stage": "EW", "upstream_link": 104, "downstream_link": 203, "turn_fraction": 1.0, "saturation_veh_per_sec": 0.5}
+  ],
+  "total_sec": 4500,
+  "eval_start_sec": 600,
+  "eval_end_sec": 4200,
+  "sim_res": 10,
+  "random_seeds": [11, 22, 33, 44, 55, 66, 77, 88, 99, 110],
+  "queue_upstream_window_m": 150,
+  "queue_downstream_window_m": 100,
+  "stopped_speed_kmh": 5,
+  "ema_alpha": 0.5,
+  "trace_every_sec": 60,
+  "timing": {
+    "fixed_cycle_sec": 153,
+    "fixed_greens_sec": {"NS": 72, "EW": 73},
+    "amber_sec": 3,
+    "all_red_sec": 1,
+    "min_green_sec": 10,
+    "max_green_sec": 80,
+    "max_red_sec": 120,
+    "decision_interval_sec": 5,
+    "pressure_hysteresis": 0.2
+  }
+}

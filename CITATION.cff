@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use this repository, please cite it as below."
+title: "Adaptive Traffic Signal Control and Open-Source Simulation of Heterogeneous Urban Traffic: Lanka Intersection, Varanasi"
+type: software
+authors:
+  - family-names: Saha
+    given-names: Ananya
+    affiliation: "Department of Civil Engineering, Indian Institute of Technology (BHU) Varanasi"
+repository-code: "https://github.com/ananya-fml/adaptive-traffic-control-mixed-traffic"
+license: MIT
+version: 0.1.0
+date-released: 2026-11-04
+keywords:
+  - adaptive traffic signal control
+  - heterogeneous traffic
+  - PTV VISSIM
+  - SUMO
+  - mixed traffic
+  - research reproducibility

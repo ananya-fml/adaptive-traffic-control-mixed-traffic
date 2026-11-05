@@ -1,0 +1,61 @@
+archive,scenario,signal_group,command,begin_s,duration_s
+results,Base,1,GREEN,0.0,
+results,Base,1,RED,63.0,
+results,Base,1,AMBER (fixed state),,3.0
+results,Base,2,RED,3.0,
+results,Base,2,GREEN,63.0,
+results,Base,2,AMBER (fixed state),,3.0
+results,Encroach,1,GREEN,0.0,
+results,Encroach,1,RED,63.0,
+results,Encroach,1,AMBER (fixed state),,3.0
+results,Encroach,2,RED,3.0,
+results,Encroach,2,GREEN,63.0,
+results,Encroach,2,AMBER (fixed state),,3.0
+results,Lane_Block,1,GREEN,0.0,
+results,Lane_Block,1,RED,63.0,
+results,Lane_Block,1,AMBER (fixed state),,3.0
+results,Lane_Block,2,RED,3.0,
+results,Lane_Block,2,GREEN,63.0,
+results,Lane_Block,2,AMBER (fixed state),,3.0
+results,Monsoon,1,GREEN,0.0,
+results,Monsoon,1,RED,63.0,
+results,Monsoon,1,AMBER (fixed state),,3.0
+results,Monsoon,2,RED,3.0,
+results,Monsoon,2,GREEN,63.0,
+results,Monsoon,2,AMBER (fixed state),,3.0
+results,Night,1,GREEN,0.0,
+results,Night,1,RED,63.0,
+results,Night,1,AMBER (fixed state),,3.0
+results,Night,2,RED,3.0,
+results,Night,2,GREEN,63.0,
+results,Night,2,AMBER (fixed state),,3.0
+ug_results,Base,1,GREEN,0.0,
+ug_results,Base,1,RED,63.0,
+ug_results,Base,1,AMBER (fixed state),,3.0
+ug_results,Base,2,RED,3.0,
+ug_results,Base,2,GREEN,63.0,
+ug_results,Base,2,AMBER (fixed state),,3.0
+ug_results,Encroach,1,GREEN,0.0,
+ug_results,Encroach,1,RED,63.0,
+ug_results,Encroach,1,AMBER (fixed state),,3.0
+ug_results,Encroach,2,RED,3.0,
+ug_results,Encroach,2,GREEN,63.0,
+ug_results,Encroach,2,AMBER (fixed state),,3.0
+ug_results,Lane_Block,1,GREEN,0.0,
+ug_results,Lane_Block,1,RED,63.0,
+ug_results,Lane_Block,1,AMBER (fixed state),,3.0
+ug_results,Lane_Block,2,RED,3.0,
+ug_results,Lane_Block,2,GREEN,63.0,
+ug_results,Lane_Block,2,AMBER (fixed state),,3.0
+ug_results,Monsoon,1,GREEN,0.0,
+ug_results,Monsoon,1,RED,63.0,
+ug_results,Monsoon,1,AMBER (fixed state),,3.0
+ug_results,Monsoon,2,RED,3.0,
+ug_results,Monsoon,2,GREEN,63.0,
+ug_results,Monsoon,2,AMBER (fixed state),,3.0
+ug_results,Night,1,GREEN,0.0,
+ug_results,Night,1,RED,63.0,
+ug_results,Night,1,AMBER (fixed state),,3.0
+ug_results,Night,2,RED,3.0,
+ug_results,Night,2,GREEN,63.0,
+ug_results,Night,2,AMBER (fixed state),,3.0

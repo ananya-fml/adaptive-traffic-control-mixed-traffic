@@ -1,0 +1,17 @@
+quantity,scenario,controller,value,unit,ug_report_nov2025,thesis_apr2026,reproduced_from_recovered_exports,note
+mean_delay,Base,fixed,30.77,s/veh,"Results 1, p.16","Results and Discussion 1",no,Attributed to VISSIM node-level delay over 600-4200 s; no column or aggregation in the recovered exports yields this value (docs/evidence_audit.md s.4)
+mean_delay,Base,adaptive,28.92,s/veh,"Results 1, p.16","Results and Discussion 1",no,As above
+mean_delay,Encroach,fixed,34.77,s/veh,"Results 1, p.16-17","Results and Discussion 1",no,As above
+mean_delay,Encroach,adaptive,33.62,s/veh,"Results 1, p.17","Results and Discussion 1",no,As above
+delay_reduction,Base,adaptive_vs_fixed,6.0,%,"Results 1; summary table p.19","Results and Discussion 1; summary table",no,Recomputed from printed values: 6.01%. Closest recovered candidate: unweighted mean of movement-level node delay in runs 3 vs 8 = 6.03% (absolute levels differ ~7.8x)
+delay_reduction,Encroach,adaptive_vs_fixed,3.3,%,"Results 1; summary table p.19","Results and Discussion 1; summary table",no,Recomputed from printed values: 3.31%. Same candidate metric on runs 2 vs 4 gives 2.75%
+co_reduction,Base,adaptive_vs_fixed,1.9,%,"Results 4, p.18","Results and Discussion 4",no,Summary table labels emissions 'CO NOx CO2' while text and charts report CO NOx VOC; units never stated
+nox_reduction,Base,adaptive_vs_fixed,1.9,%,"Results 4, p.18","Results and Discussion 4",no,
+voc_reduction,Base,adaptive_vs_fixed,1.8,%,"Results 4, p.18","Results and Discussion 4",no,
+fuel_reduction,Base,adaptive_vs_fixed,1.9,%,"Results 4, p.18","Results and Discussion 4",no,
+co_reduction,Encroach,adaptive_vs_fixed,1.5,%,"Results 4, p.18","Results and Discussion 4",no,
+nox_reduction,Encroach,adaptive_vs_fixed,1.5,%,"Results 4, p.18","Results and Discussion 4",no,
+voc_reduction,Encroach,adaptive_vs_fixed,1.5,%,"Results 4, p.18","Results and Discussion 4",no,
+fuel_reduction,Encroach,adaptive_vs_fixed,1.5,%,"Results 4, p.18","Results and Discussion 4",no,
+early_trial_delay_reduction,Encroach,adaptive_vs_fixed,21,%,"p.20","after summary table",not_applicable,Described in both reports as a preliminary/non-final result superseded by interval-based aggregation; not a finding
+replications,all,all,up to 5 seeds,,"Simulation Settings, p.13","Simulation Settings and Run Structure",contradicted,Exports contain 10 run IDs per batch but each batch is one simulation repeated with seed 42 (docs/evidence_audit.md s.2)

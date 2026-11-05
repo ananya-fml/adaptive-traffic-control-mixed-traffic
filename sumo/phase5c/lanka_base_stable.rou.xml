@@ -1,0 +1,178 @@
+<routes>
+    <vType id="motorbike" tau="1.0" color="1,0.1,0.1" guiShape="motorcycle" vClass="motorcycle"
+           accel="2.8" decel="4.5" sigma="0.55"
+           length="2.0" width="0.7" minGap="0.45" maxSpeed="13.9"
+           lcStrategic="3.0" lcCooperative="0.8" lcSpeedGain="3.0" lcKeepRight="0"
+           lcSublane="1.5" lcPushy="0.9" lcImpatience="0.8" lcAssertive="1.4"
+           minGapLat="0.18" latAlignment="right"
+           jmDriveAfterRedTime="1.0" jmIgnoreKeepClearTime="6"/>
+
+    <vType id="cycle" tau="1.0" color="0.1,0.7,0.1" guiShape="bicycle" vClass="bicycle"
+           accel="1.2" decel="3.0" sigma="0.45"
+           length="1.8" width="0.6" minGap="0.35" maxSpeed="5.5"
+           lcStrategic="2.0" lcCooperative="0.9" lcSpeedGain="1.8" lcKeepRight="0"
+           lcSublane="1.2" lcPushy="0.5" lcImpatience="0.4" lcAssertive="1.0"
+           minGapLat="0.15" latAlignment="right"
+           jmDriveAfterRedTime="0.5" jmIgnoreKeepClearTime="6"/>
+
+    <vType id="auto" tau="1.0" color="1,0.8,0" guiShape="passenger" vClass="passenger"
+           accel="2.1" decel="4.5" sigma="0.50"
+           length="3.0" width="1.3" minGap="0.90" maxSpeed="11.0"
+           lcStrategic="3.0" lcCooperative="0.9" lcSpeedGain="3.0" lcKeepRight="0"
+           lcSublane="1.3" lcPushy="0.65" lcImpatience="0.6" lcAssertive="1.3"
+           minGapLat="0.22" latAlignment="center"
+           jmDriveAfterRedTime="1.0" jmIgnoreKeepClearTime="6"/>
+
+    <vType id="erickshaw" tau="1.0" color="1,0.45,0" guiShape="passenger" vClass="passenger"
+           accel="1.9" decel="4.2" sigma="0.50"
+           length="3.0" width="1.3" minGap="0.95" maxSpeed="9.5"
+           lcStrategic="2.8" lcCooperative="0.9" lcSpeedGain="2.5" lcKeepRight="0"
+           lcSublane="1.2" lcPushy="0.55" lcImpatience="0.55" lcAssertive="1.2"
+           minGapLat="0.22" latAlignment="center"
+           jmDriveAfterRedTime="1.0" jmIgnoreKeepClearTime="6"/>
+
+    <vType id="car" tau="1.0" color="0.1,0.35,1" guiShape="passenger" vClass="passenger"
+           accel="2.0" decel="4.5" sigma="0.50"
+           length="4.5" width="1.8" minGap="1.40" maxSpeed="13.9"
+           lcStrategic="3.0" lcCooperative="1.0" lcSpeedGain="3.0" lcKeepRight="0"
+           lcSublane="1.1" lcPushy="0.35" lcImpatience="0.35" lcAssertive="1.1"
+           minGapLat="0.30" latAlignment="center"
+           jmDriveAfterRedTime="0.8" jmIgnoreKeepClearTime="6"/>
+
+    <vType id="lcv" tau="1.0" color="0.55,0.3,0.1" guiShape="delivery" vClass="delivery"
+           accel="1.7" decel="4.0" sigma="0.40"
+           length="5.5" width="2.0" minGap="1.80" maxSpeed="11.0"
+           lcStrategic="2.2" lcCooperative="1.0" lcSpeedGain="2.0" lcKeepRight="0"
+           lcSublane="0.8" lcPushy="0.20" lcImpatience="0.25" lcAssertive="0.9"
+           minGapLat="0.40" latAlignment="center"
+           jmDriveAfterRedTime="0.5" jmIgnoreKeepClearTime="6"/>
+
+    <vType id="bus" tau="1.0" color="0.55,0.1,0.8" guiShape="bus" vClass="bus"
+           accel="1.4" decel="3.8" sigma="0.35"
+           length="10.5" width="2.5" minGap="2.40" maxSpeed="10.0"
+           lcStrategic="1.8" lcCooperative="1.0" lcSpeedGain="1.6" lcKeepRight="0"
+           lcSublane="0.6" lcPushy="0.10" lcImpatience="0.15" lcAssertive="0.8"
+           minGapLat="0.50" latAlignment="center"
+           jmDriveAfterRedTime="0.2" jmIgnoreKeepClearTime="6"/>
+
+    <vType id="ambulance" tau="1.0" color="1,1,1" guiShape="emergency" vClass="emergency"
+           accel="1.8" decel="4.0" sigma="0.35"
+           length="6.5" width="2.1" minGap="1.40" maxSpeed="14.5"
+           lcStrategic="3.0" lcCooperative="0.8" lcSpeedGain="3.0" lcKeepRight="0"
+           lcSublane="1.2" lcPushy="0.75" lcImpatience="0.8" lcAssertive="1.4"
+           minGapLat="0.25" latAlignment="center"
+           jmDriveAfterRedTime="1.5" jmIgnoreKeepClearTime="6"/>
+
+    <route id="north_to_L1" edges="v2 v26 v34a v34b v34c v25 v1"/>
+    <route id="north_to_L3" edges="v2 v26 v27 v3"/>
+    <route id="north_to_L5" edges="v2 v26 v34a v29 v5"/>
+    <route id="north_to_L7" edges="v2 v26 v34a v34b v31 v7"/>
+
+    <route id="east_to_L1" edges="v4 v28 v34b v34c v25 v1"/>
+    <route id="east_to_L3" edges="v4 v28 v34b v34c v34d v27 v3"/>
+    <route id="east_to_L5" edges="v4 v28 v29 v5"/>
+    <route id="east_to_L7" edges="v4 v28 v34b v31 v7"/>
+
+    <route id="south_to_L1" edges="v6 v30 v34c v25 v1"/>
+    <route id="south_to_L3" edges="v6 v30 v34c v34d v27 v3"/>
+    <route id="south_to_L5" edges="v6 v30 v34c v34d v34a v29 v5"/>
+    <route id="south_to_L7" edges="v6 v30 v31 v7"/>
+
+    <route id="west_to_L1" edges="v8 v32 v25 v1"/>
+    <route id="west_to_L3" edges="v8 v32 v34d v27 v3"/>
+    <route id="west_to_L5" edges="v8 v32 v34d v34a v29 v5"/>
+    <route id="west_to_L7" edges="v8 v32 v34d v34a v34b v31 v7"/>
+
+    <flow id="north_car_north_to_L3" type="car" route="north_to_L3" begin="0" end="3600" vehsPerHour="15.262"/>
+    <flow id="north_car_north_to_L7" type="car" route="north_to_L7" begin="0" end="3600" vehsPerHour="15.262"/>
+    <flow id="north_car_north_to_L5" type="car" route="north_to_L5" begin="0" end="3600" vehsPerHour="15.262"/>
+    <flow id="north_car_north_to_L1" type="car" route="north_to_L1" begin="0" end="3600" vehsPerHour="15.262"/>
+    <flow id="north_auto_north_to_L3" type="auto" route="north_to_L3" begin="0" end="3600" vehsPerHour="7.631"/>
+    <flow id="north_auto_north_to_L7" type="auto" route="north_to_L7" begin="0" end="3600" vehsPerHour="7.631"/>
+    <flow id="north_auto_north_to_L5" type="auto" route="north_to_L5" begin="0" end="3600" vehsPerHour="7.631"/>
+    <flow id="north_auto_north_to_L1" type="auto" route="north_to_L1" begin="0" end="3600" vehsPerHour="7.631"/>
+    <flow id="north_cycle_north_to_L3" type="cycle" route="north_to_L3" begin="0" end="3600" vehsPerHour="11.870"/>
+    <flow id="north_cycle_north_to_L7" type="cycle" route="north_to_L7" begin="0" end="3600" vehsPerHour="11.870"/>
+    <flow id="north_cycle_north_to_L5" type="cycle" route="north_to_L5" begin="0" end="3600" vehsPerHour="11.870"/>
+    <flow id="north_cycle_north_to_L1" type="cycle" route="north_to_L1" begin="0" end="3600" vehsPerHour="11.870"/>
+    <flow id="north_erickshaw_north_to_L3" type="erickshaw" route="north_to_L3" begin="0" end="3600" vehsPerHour="16.957"/>
+    <flow id="north_erickshaw_north_to_L7" type="erickshaw" route="north_to_L7" begin="0" end="3600" vehsPerHour="16.957"/>
+    <flow id="north_erickshaw_north_to_L5" type="erickshaw" route="north_to_L5" begin="0" end="3600" vehsPerHour="16.957"/>
+    <flow id="north_erickshaw_north_to_L1" type="erickshaw" route="north_to_L1" begin="0" end="3600" vehsPerHour="16.957"/>
+    <flow id="north_ambulance_north_to_L3" type="ambulance" route="north_to_L3" begin="0" end="3600" vehsPerHour="1.696"/>
+    <flow id="north_ambulance_north_to_L7" type="ambulance" route="north_to_L7" begin="0" end="3600" vehsPerHour="1.696"/>
+    <flow id="north_ambulance_north_to_L5" type="ambulance" route="north_to_L5" begin="0" end="3600" vehsPerHour="1.696"/>
+    <flow id="north_ambulance_north_to_L1" type="ambulance" route="north_to_L1" begin="0" end="3600" vehsPerHour="1.696"/>
+    <flow id="north_motorbike_north_to_L3" type="motorbike" route="north_to_L3" begin="0" end="3600" vehsPerHour="101.744"/>
+    <flow id="north_motorbike_north_to_L7" type="motorbike" route="north_to_L7" begin="0" end="3600" vehsPerHour="101.744"/>
+    <flow id="north_motorbike_north_to_L5" type="motorbike" route="north_to_L5" begin="0" end="3600" vehsPerHour="101.744"/>
+    <flow id="north_motorbike_north_to_L1" type="motorbike" route="north_to_L1" begin="0" end="3600" vehsPerHour="101.744"/>
+    <flow id="east_car_east_to_L5" type="car" route="east_to_L5" begin="0" end="3600" vehsPerHour="27.060"/>
+    <flow id="east_car_east_to_L7" type="car" route="east_to_L7" begin="0" end="3600" vehsPerHour="27.060"/>
+    <flow id="east_car_east_to_L1" type="car" route="east_to_L1" begin="0" end="3600" vehsPerHour="27.060"/>
+    <flow id="east_car_east_to_L3" type="car" route="east_to_L3" begin="0" end="3600" vehsPerHour="27.060"/>
+    <flow id="east_lcv_east_to_L5" type="lcv" route="east_to_L5" begin="0" end="3600" vehsPerHour="1.320"/>
+    <flow id="east_lcv_east_to_L7" type="lcv" route="east_to_L7" begin="0" end="3600" vehsPerHour="1.320"/>
+    <flow id="east_lcv_east_to_L1" type="lcv" route="east_to_L1" begin="0" end="3600" vehsPerHour="1.320"/>
+    <flow id="east_lcv_east_to_L3" type="lcv" route="east_to_L3" begin="0" end="3600" vehsPerHour="1.320"/>
+    <flow id="east_bus_east_to_L5" type="bus" route="east_to_L5" begin="0" end="3600" vehsPerHour="1.320"/>
+    <flow id="east_bus_east_to_L7" type="bus" route="east_to_L7" begin="0" end="3600" vehsPerHour="1.320"/>
+    <flow id="east_bus_east_to_L1" type="bus" route="east_to_L1" begin="0" end="3600" vehsPerHour="1.320"/>
+    <flow id="east_bus_east_to_L3" type="bus" route="east_to_L3" begin="0" end="3600" vehsPerHour="1.320"/>
+    <flow id="east_auto_east_to_L5" type="auto" route="east_to_L5" begin="0" end="3600" vehsPerHour="31.020"/>
+    <flow id="east_auto_east_to_L7" type="auto" route="east_to_L7" begin="0" end="3600" vehsPerHour="31.020"/>
+    <flow id="east_auto_east_to_L1" type="auto" route="east_to_L1" begin="0" end="3600" vehsPerHour="31.020"/>
+    <flow id="east_auto_east_to_L3" type="auto" route="east_to_L3" begin="0" end="3600" vehsPerHour="31.020"/>
+    <flow id="east_cycle_east_to_L5" type="cycle" route="east_to_L5" begin="0" end="3600" vehsPerHour="9.900"/>
+    <flow id="east_cycle_east_to_L7" type="cycle" route="east_to_L7" begin="0" end="3600" vehsPerHour="9.900"/>
+    <flow id="east_cycle_east_to_L1" type="cycle" route="east_to_L1" begin="0" end="3600" vehsPerHour="9.900"/>
+    <flow id="east_cycle_east_to_L3" type="cycle" route="east_to_L3" begin="0" end="3600" vehsPerHour="9.900"/>
+    <flow id="east_erickshaw_east_to_L5" type="erickshaw" route="east_to_L5" begin="0" end="3600" vehsPerHour="18.480"/>
+    <flow id="east_erickshaw_east_to_L7" type="erickshaw" route="east_to_L7" begin="0" end="3600" vehsPerHour="18.480"/>
+    <flow id="east_erickshaw_east_to_L1" type="erickshaw" route="east_to_L1" begin="0" end="3600" vehsPerHour="18.480"/>
+    <flow id="east_erickshaw_east_to_L3" type="erickshaw" route="east_to_L3" begin="0" end="3600" vehsPerHour="18.480"/>
+    <flow id="east_motorbike_east_to_L5" type="motorbike" route="east_to_L5" begin="0" end="3600" vehsPerHour="71.940"/>
+    <flow id="east_motorbike_east_to_L7" type="motorbike" route="east_to_L7" begin="0" end="3600" vehsPerHour="71.940"/>
+    <flow id="east_motorbike_east_to_L1" type="motorbike" route="east_to_L1" begin="0" end="3600" vehsPerHour="71.940"/>
+    <flow id="east_motorbike_east_to_L3" type="motorbike" route="east_to_L3" begin="0" end="3600" vehsPerHour="71.940"/>
+    <flow id="south_car_south_to_L7" type="car" route="south_to_L7" begin="0" end="3600" vehsPerHour="9.323"/>
+    <flow id="south_car_south_to_L1" type="car" route="south_to_L1" begin="0" end="3600" vehsPerHour="9.323"/>
+    <flow id="south_car_south_to_L3" type="car" route="south_to_L3" begin="0" end="3600" vehsPerHour="9.323"/>
+    <flow id="south_car_south_to_L5" type="car" route="south_to_L5" begin="0" end="3600" vehsPerHour="9.323"/>
+    <flow id="south_auto_south_to_L7" type="auto" route="south_to_L7" begin="0" end="3600" vehsPerHour="27.123"/>
+    <flow id="south_auto_south_to_L1" type="auto" route="south_to_L1" begin="0" end="3600" vehsPerHour="27.123"/>
+    <flow id="south_auto_south_to_L3" type="auto" route="south_to_L3" begin="0" end="3600" vehsPerHour="27.123"/>
+    <flow id="south_auto_south_to_L5" type="auto" route="south_to_L5" begin="0" end="3600" vehsPerHour="27.123"/>
+    <flow id="south_cycle_south_to_L7" type="cycle" route="south_to_L7" begin="0" end="3600" vehsPerHour="19.495"/>
+    <flow id="south_cycle_south_to_L1" type="cycle" route="south_to_L1" begin="0" end="3600" vehsPerHour="19.495"/>
+    <flow id="south_cycle_south_to_L3" type="cycle" route="south_to_L3" begin="0" end="3600" vehsPerHour="19.495"/>
+    <flow id="south_cycle_south_to_L5" type="cycle" route="south_to_L5" begin="0" end="3600" vehsPerHour="19.495"/>
+    <flow id="south_erickshaw_south_to_L7" type="erickshaw" route="south_to_L7" begin="0" end="3600" vehsPerHour="22.037"/>
+    <flow id="south_erickshaw_south_to_L1" type="erickshaw" route="south_to_L1" begin="0" end="3600" vehsPerHour="22.037"/>
+    <flow id="south_erickshaw_south_to_L3" type="erickshaw" route="south_to_L3" begin="0" end="3600" vehsPerHour="22.037"/>
+    <flow id="south_erickshaw_south_to_L5" type="erickshaw" route="south_to_L5" begin="0" end="3600" vehsPerHour="22.037"/>
+    <flow id="south_motorbike_south_to_L7" type="motorbike" route="south_to_L7" begin="0" end="3600" vehsPerHour="89.421"/>
+    <flow id="south_motorbike_south_to_L1" type="motorbike" route="south_to_L1" begin="0" end="3600" vehsPerHour="89.421"/>
+    <flow id="south_motorbike_south_to_L3" type="motorbike" route="south_to_L3" begin="0" end="3600" vehsPerHour="89.421"/>
+    <flow id="south_motorbike_south_to_L5" type="motorbike" route="south_to_L5" begin="0" end="3600" vehsPerHour="89.421"/>
+    <flow id="west_car_west_to_L1" type="car" route="west_to_L1" begin="0" end="3600" vehsPerHour="37.364"/>
+    <flow id="west_car_west_to_L3" type="car" route="west_to_L3" begin="0" end="3600" vehsPerHour="37.364"/>
+    <flow id="west_car_west_to_L5" type="car" route="west_to_L5" begin="0" end="3600" vehsPerHour="37.364"/>
+    <flow id="west_car_west_to_L7" type="car" route="west_to_L7" begin="0" end="3600" vehsPerHour="37.364"/>
+    <flow id="west_bus_west_to_L1" type="bus" route="west_to_L1" begin="0" end="3600" vehsPerHour="6.059"/>
+    <flow id="west_bus_west_to_L3" type="bus" route="west_to_L3" begin="0" end="3600" vehsPerHour="6.059"/>
+    <flow id="west_bus_west_to_L5" type="bus" route="west_to_L5" begin="0" end="3600" vehsPerHour="6.059"/>
+    <flow id="west_bus_west_to_L7" type="bus" route="west_to_L7" begin="0" end="3600" vehsPerHour="6.059"/>
+    <flow id="west_cycle_west_to_L1" type="cycle" route="west_to_L1" begin="0" end="3600" vehsPerHour="5.049"/>
+    <flow id="west_cycle_west_to_L3" type="cycle" route="west_to_L3" begin="0" end="3600" vehsPerHour="5.049"/>
+    <flow id="west_cycle_west_to_L5" type="cycle" route="west_to_L5" begin="0" end="3600" vehsPerHour="5.049"/>
+    <flow id="west_cycle_west_to_L7" type="cycle" route="west_to_L7" begin="0" end="3600" vehsPerHour="5.049"/>
+    <flow id="west_erickshaw_west_to_L1" type="erickshaw" route="west_to_L1" begin="0" end="3600" vehsPerHour="56.551"/>
+    <flow id="west_erickshaw_west_to_L3" type="erickshaw" route="west_to_L3" begin="0" end="3600" vehsPerHour="56.551"/>
+    <flow id="west_erickshaw_west_to_L5" type="erickshaw" route="west_to_L5" begin="0" end="3600" vehsPerHour="56.551"/>
+    <flow id="west_erickshaw_west_to_L7" type="erickshaw" route="west_to_L7" begin="0" end="3600" vehsPerHour="56.551"/>
+    <flow id="west_motorbike_west_to_L1" type="motorbike" route="west_to_L1" begin="0" end="3600" vehsPerHour="79.777"/>
+    <flow id="west_motorbike_west_to_L3" type="motorbike" route="west_to_L3" begin="0" end="3600" vehsPerHour="79.777"/>
+    <flow id="west_motorbike_west_to_L5" type="motorbike" route="west_to_L5" begin="0" end="3600" vehsPerHour="79.777"/>
+    <flow id="west_motorbike_west_to_L7" type="motorbike" route="west_to_L7" begin="0" end="3600" vehsPerHour="79.777"/>
+</routes>

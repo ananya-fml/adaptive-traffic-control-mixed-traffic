@@ -1,0 +1,9 @@
+# Normalise text files to LF in the repository.
+* text=auto
+*.png binary
+
+# The legacy controller must stay byte-identical to the archived original (CRLF line endings).
+# Its SHA-256 is verified by src/lanka_signal/legacy_logic.py and the CI tests.
+# These lines must stay BELOW "* text=auto": later lines take precedence.
+vissim/legacy/original_legacy_controller.py -text
+vissim/legacy/SHA256SUMS -text

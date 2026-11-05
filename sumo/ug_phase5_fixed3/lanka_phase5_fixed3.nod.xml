@@ -1,0 +1,23 @@
+<nodes>
+    <node id="n1" x="-4.365" y="-39.472" type="priority"/>
+    <node id="n2" x="-103.187" y="-212.901" type="priority"/>
+    <node id="n3" x="-113.075" y="-208.226" type="priority"/>
+    <node id="n4" x="-12.814" y="-35.197" type="traffic_light"/>
+    <node id="n5" x="-13.974" y="-5.238" type="priority"/>
+    <node id="n6" x="-202.972" y="56.724" type="priority"/>
+    <node id="n7" x="-201.555" y="66.456" type="priority"/>
+    <node id="n8" x="-13.779" y="4.701" type="traffic_light"/>
+    <node id="n9" x="18.024" y="14.379" type="priority"/>
+    <node id="n10" x="46.789" y="212.005" type="priority"/>
+    <node id="n11" x="58.287" y="210.416" type="priority"/>
+    <node id="n13" x="34.668" y="-18.408" type="priority"/>
+    <node id="n14" x="227.578" y="-67.328" type="priority"/>
+    <node id="n15" x="224.546" y="-77.759" type="priority"/>
+    <node id="n17" x="9.005" y="-28.028" type="priority"/>
+    <node id="n18" x="-4.879" y="-19.657" type="priority"/>
+    <node id="n19" x="3.362" y="-1.173" type="priority"/>
+    <node id="n20" x="27.844" y="15.325" type="traffic_light"/>
+    <node id="n21" x="21.152" y="-10.061" type="priority"/>
+    <node id="n22" x="35.129" y="-28.651" type="traffic_light"/>
+    <node id="n23" x="-0.220" y="-2.924" type="priority"/>
+</nodes>

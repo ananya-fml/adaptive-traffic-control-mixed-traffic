@@ -1,0 +1,59 @@
+<connections>
+    <connection from="v2"  to="v26" fromLane="0" toLane="0"/>
+    <connection from="v2"  to="v26" fromLane="1" toLane="1"/>
+    <connection from="v4"  to="v28" fromLane="0" toLane="0"/>
+    <connection from="v4"  to="v28" fromLane="1" toLane="1"/>
+    <connection from="v6"  to="v30" fromLane="0" toLane="0"/>
+    <connection from="v6"  to="v30" fromLane="1" toLane="1"/>
+    <connection from="v8"  to="v32" fromLane="0" toLane="0"/>
+    <connection from="v8"  to="v32" fromLane="1" toLane="1"/>
+
+    <connection from="v26" to="v27"  fromLane="0" toLane="0"/>
+    <connection from="v26" to="v27"  fromLane="1" toLane="1"/>
+    <connection from="v26" to="v34a" fromLane="0" toLane="0"/>
+    <connection from="v26" to="v34a" fromLane="1" toLane="1"/>
+
+    <connection from="v28" to="v29"  fromLane="0" toLane="0"/>
+    <connection from="v28" to="v29"  fromLane="1" toLane="1"/>
+    <connection from="v28" to="v34b" fromLane="0" toLane="0"/>
+    <connection from="v28" to="v34b" fromLane="1" toLane="1"/>
+
+    <connection from="v30" to="v31"  fromLane="0" toLane="0"/>
+    <connection from="v30" to="v31"  fromLane="1" toLane="1"/>
+    <connection from="v30" to="v34c" fromLane="0" toLane="0"/>
+    <connection from="v30" to="v34c" fromLane="1" toLane="1"/>
+
+    <connection from="v32" to="v25"  fromLane="0" toLane="0"/>
+    <connection from="v32" to="v25"  fromLane="1" toLane="1"/>
+    <connection from="v32" to="v34d" fromLane="0" toLane="0"/>
+    <connection from="v32" to="v34d" fromLane="1" toLane="1"/>
+
+    <connection from="v34a" to="v29"  fromLane="0" toLane="0"/>
+    <connection from="v34a" to="v29"  fromLane="1" toLane="1"/>
+    <connection from="v34a" to="v34b" fromLane="0" toLane="0"/>
+    <connection from="v34a" to="v34b" fromLane="1" toLane="1"/>
+
+    <connection from="v34b" to="v31"  fromLane="0" toLane="0"/>
+    <connection from="v34b" to="v31"  fromLane="1" toLane="1"/>
+    <connection from="v34b" to="v34c" fromLane="0" toLane="0"/>
+    <connection from="v34b" to="v34c" fromLane="1" toLane="1"/>
+
+    <connection from="v34c" to="v25"  fromLane="0" toLane="0"/>
+    <connection from="v34c" to="v25"  fromLane="1" toLane="1"/>
+    <connection from="v34c" to="v34d" fromLane="0" toLane="0"/>
+    <connection from="v34c" to="v34d" fromLane="1" toLane="1"/>
+
+    <connection from="v34d" to="v27"  fromLane="0" toLane="0"/>
+    <connection from="v34d" to="v27"  fromLane="1" toLane="1"/>
+    <connection from="v34d" to="v34a" fromLane="0" toLane="0"/>
+    <connection from="v34d" to="v34a" fromLane="1" toLane="1"/>
+
+    <connection from="v25" to="v1"  fromLane="0" toLane="0"/>
+    <connection from="v25" to="v1"  fromLane="1" toLane="1"/>
+    <connection from="v27" to="v3"  fromLane="0" toLane="0"/>
+    <connection from="v27" to="v3"  fromLane="1" toLane="1"/>
+    <connection from="v29" to="v5"  fromLane="0" toLane="0"/>
+    <connection from="v29" to="v5"  fromLane="1" toLane="1"/>
+    <connection from="v31" to="v7"  fromLane="0" toLane="0"/>
+    <connection from="v31" to="v7"  fromLane="1" toLane="1"/>
+</connections>

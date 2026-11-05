@@ -1,0 +1,19 @@
+# Private evidence: never commit (see data/raw/README.md)
+data/raw/*
+!data/raw/README.md
+*.inpx
+*.layx
+*.att
+*.err
+
+# SUMO run outputs
+*.stats.xml
+*_queue_output.xml
+tripinfo*.xml
+
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/
+*.egg-info/
+.venv/

@@ -1,0 +1,20 @@
+<configuration>
+    <input>
+        <net-file value="lanka_phase5c.net.xml"/>
+        <route-files value="lanka_base_stable.rou.xml"/>
+        <additional-files value="lanka_phase5c.add.xml"/>
+    </input>
+    <time>
+        <begin value="0"/>
+        <end value="3600"/>
+        <step-length value="1"/>
+    </time>
+    <processing>
+        <lateral-resolution value="0.3"/>
+        <ignore-junction-blocker value="5"/>
+    </processing>
+    <report>
+        <verbose value="true"/>
+        <no-step-log value="true"/>
+    </report>
+</configuration>

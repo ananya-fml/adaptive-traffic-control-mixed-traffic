@@ -1,0 +1,9 @@
+pandas>=2.0
+numpy>=1.24
+matplotlib>=3.7
+scipy>=1.10
+pytest>=7
+# SUMO (for sumo/run_scenarios.py, sumo/traci/ and the SUMO tests)
+eclipse-sumo==1.28.0
+libsumo==1.28.0
+traci==1.28.0

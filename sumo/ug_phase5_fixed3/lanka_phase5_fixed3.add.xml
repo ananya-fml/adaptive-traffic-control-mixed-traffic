@@ -1,0 +1,93 @@
+<additional>
+    <!-- Fixed-time simple 2-group logic -->
+
+    <!-- SG1: East-West -->
+    <tlLogic id="n8" type="static" programID="SG1_EW" offset="0">
+        <phase duration="60" state="GG"/>
+        <phase duration="3"  state="yy"/>
+        <phase duration="90" state="rr"/>
+    </tlLogic>
+
+    <tlLogic id="n22" type="static" programID="SG1_EW" offset="0">
+        <phase duration="60" state="GG"/>
+        <phase duration="3"  state="yy"/>
+        <phase duration="90" state="rr"/>
+    </tlLogic>
+
+    <!-- SG2: North-South -->
+    <tlLogic id="n4" type="static" programID="SG2_NS" offset="0">
+        <phase duration="63" state="rr"/>
+        <phase duration="87" state="GG"/>
+        <phase duration="3"  state="yy"/>
+    </tlLogic>
+
+    <tlLogic id="n20" type="static" programID="SG2_NS" offset="0">
+        <phase duration="63" state="rr"/>
+        <phase duration="87" state="GG"/>
+        <phase duration="3"  state="yy"/>
+    </tlLogic>
+
+    <!-- ===================================================== -->
+    <!-- MULTI-LANE E2 DETECTORS: FULL APPROACH BEFORE SIGNAL  -->
+    <!-- ===================================================== -->
+
+    <!-- North approach before signal: edge v2 -->
+    <laneAreaDetector id="q_north_lane0"
+                      lane="v2_0"
+                      pos="0.1"
+                      endPos="-0.1"
+                      period="1"
+                      file="lanka_queue_output.xml"/>
+
+    <laneAreaDetector id="q_north_lane1"
+                      lane="v2_1"
+                      pos="0.1"
+                      endPos="-0.1"
+                      period="1"
+                      file="lanka_queue_output.xml"/>
+
+    <!-- East approach before signal: edge v4 -->
+    <laneAreaDetector id="q_east_lane0"
+                      lane="v4_0"
+                      pos="0.1"
+                      endPos="-0.1"
+                      period="1"
+                      file="lanka_queue_output.xml"/>
+
+    <laneAreaDetector id="q_east_lane1"
+                      lane="v4_1"
+                      pos="0.1"
+                      endPos="-0.1"
+                      period="1"
+                      file="lanka_queue_output.xml"/>
+
+    <!-- South approach before signal: edge v6 -->
+    <laneAreaDetector id="q_south_lane0"
+                      lane="v6_0"
+                      pos="0.1"
+                      endPos="-0.1"
+                      period="1"
+                      file="lanka_queue_output.xml"/>
+
+    <laneAreaDetector id="q_south_lane1"
+                      lane="v6_1"
+                      pos="0.1"
+                      endPos="-0.1"
+                      period="1"
+                      file="lanka_queue_output.xml"/>
+
+    <!-- West approach before signal: edge v8 -->
+    <laneAreaDetector id="q_west_lane0"
+                      lane="v8_0"
+                      pos="0.1"
+                      endPos="-0.1"
+                      period="1"
+                      file="lanka_queue_output.xml"/>
+
+    <laneAreaDetector id="q_west_lane1"
+                      lane="v8_1"
+                      pos="0.1"
+                      endPos="-0.1"
+                      period="1"
+                      file="lanka_queue_output.xml"/>
+</additional>
