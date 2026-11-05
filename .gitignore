@@ -2,6 +2,7 @@
 data/raw/*
 !data/raw/README.md
 *.inpx
+!vissim/models/*.inpx
 *.layx
 *.att
 *.err

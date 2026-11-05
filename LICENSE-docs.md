@@ -10,5 +10,7 @@ is licensed under the MIT licence in [`LICENSE`](LICENSE).
 `assets/lanka_vissim_network.png`: the network drawing is the author's work; the satellite background is
 © Maxar and is not covered by CC BY 4.0.
 
-Not covered and not distributed here: the PTV VISSIM `.inpx` models, raw VISSIM exports, VISSIM
-screenshots, and the UG report and thesis documents.
+`vissim/models/*.inpx` (the author's VISSIM scenario models) are also licensed under CC BY 4.0; opening
+them requires PTV VISSIM, which is not covered by this licence.
+
+Not distributed here: raw VISSIM exports and the UG report and thesis documents.

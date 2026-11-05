@@ -7,3 +7,5 @@
 # These lines must stay BELOW "* text=auto": later lines take precedence.
 vissim/legacy/original_legacy_controller.py -text
 vissim/legacy/SHA256SUMS -text
+vissim/models/*.inpx -text
+vissim/models/SHA256SUMS -text
