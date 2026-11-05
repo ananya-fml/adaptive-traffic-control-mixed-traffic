@@ -4,7 +4,7 @@
 
 | Command | Runs | Needs |
 |---|---|---|
-| `python -m pytest` | 112 tests: legacy-code characterisation, revised helpers, TraCI controllers, data integrity, SUMO and TraCI smoke tests | Python 3.10+, pandas; SUMO optional |
+| `python -m pytest` | 123 tests: legacy-code characterisation, revised helpers, TraCI controllers, data integrity, SUMO and TraCI smoke tests | Python 3.10+, pandas; SUMO optional |
 | `python analysis/replay_legacy_controller.py` | Unmodified legacy `main()` against a fake VISSIM | nothing else |
 | `python sumo/run_scenarios.py` | All recovered SUMO packages | `pip install eclipse-sumo` |
 | `python sumo/traci/run_traci_experiment.py` | Replicated TraCI controller experiment (160 runs) | `eclipse-sumo`, `libsumo`, `scipy` |
@@ -13,8 +13,8 @@
 
 ## What cannot be re-run
 
-* The VISSIM simulations: no licence, and the models are not distributed (PTV-format files built under a
-  student licence; institutional permission not yet confirmed).
+* The VISSIM simulations: no licence is available to this project. The models themselves are published in
+  `vissim/models/`, so anyone with PTV VISSIM 2025 can re-run them.
 * The original analysis that produced the reported delay and emission values: the script is lost.
 
 ## Limitations of the original study (as now understood)
@@ -42,7 +42,7 @@
 - [ ] Record confirming the signal-head `.inpx` and the intended `SIMULATION_NO` were used for runs 2, 3, 4 and 8
 - [ ] VISSIM `.err` / `.att` files or signal-times tables showing the controller actually switched signals
 - [ ] Field counts and turning proportions used to set the 8,520 veh/h inputs
-- [ ] Written permission (supervisor / institute / licence terms) before publishing `.inpx`, screenshots or reports
+- [x] Supervisor's agreement to publish the `.inpx` models (published in `vissim/models/`)
 - [ ] A licensed re-run: seed increment > 0, ≥ 10 seeds per arm, paired analysis with confidence intervals
 - [x] A SUMO TraCI port of the controller with replicated seeds ([traci_experiment.md](traci_experiment.md))
 - [ ] Calibrating the SUMO network against the VISSIM fixed-time baseline and field data
